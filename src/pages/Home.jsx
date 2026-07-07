@@ -1,6 +1,8 @@
 import ProjectCard from '../components/ProjectCard';
 import './Home.css';
 
+const BASE = import.meta.env.BASE_URL;
+
 const Home = () => {
   const projects = [
     {
@@ -8,23 +10,24 @@ const Home = () => {
       title: "Dead Man's Dock - FPS Tower Defence",
       description: "A hybrid First-Person Shooter and Tower Defense game built in Unreal Engine 5, integrated with an AI-driven Gemini & FAISS RAG chatbot to answer player queries in real-time.",
       tags: ["Unreal Engine 5", "C++", "Gemini AI", "RAG Chatbot"],
-      image: "./dead_mans_dock.png"
+      image: `${BASE}dead_mans_dock.png`
     },
     {
       id: 2,
       title: "Games Information Website",
       description: "A dynamic database-driven gaming library catalog website built with HTML, PHP, and MySQL, featuring user query interfaces and clean data integrations.",
       tags: ["HTML", "PHP", "MySQL", "Database"],
-      image: "./games_info_website.jpg"
+      image: `${BASE}games_info_website.jpg`
     },
     {
       id: 3,
       title: "Esports Tournament Website",
       description: "A fully responsive, esports-themed tournament schedule and match display website developed using semantic HTML, CSS, and modern JavaScript.",
       tags: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
-      image: "./esports_website.jpg"
+      image: `${BASE}esports_website.jpg`
     }
   ];
+
 
   return (
     <div className="page-container animate-fade-in">

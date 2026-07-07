@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import './ProjectPage.css';
 
+const BASE = import.meta.env.BASE_URL;
+
 const ProjectTwo = () => {
   return (
     <div className="page-container container animate-fade-in">
@@ -28,7 +30,7 @@ const ProjectTwo = () => {
 
       <div className="project-detail-content glass">
         <div className="project-hero-image-container-detail">
-          <img src="./games_info_website.jpg" alt="Games Info Website Screen" className="project-detail-image" />
+          <img src={`${BASE}games_info_website.jpg`} alt="Games Info Website Screen" className="project-detail-image" />
         </div>
         
         <div className="project-text-content">
